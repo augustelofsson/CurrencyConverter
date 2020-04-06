@@ -1,23 +1,38 @@
 body{
-  margin: 0;
+  
+  margin: 50px auto;
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  justify-items: center;
+  max-width: 400px;
+  min-height: 50vh;
   text-align: center;
+  border: 1px solid black;
+  background-image: url('../src/Style/Img/https___d1e00ek4ebabms.cloudfront.net_production_6b7c5fa6-b824-4430-b544-2102ad555fd1.jpg');
 }
+
 
 h1{
   margin: 0;
-  margin-bottom: .5rem;
+  margin-bottom: 5rem;
+  
 }
 
 .input{
+  
   border: 1px solid black;
   border-radius:  .3em;
   padding: .25rem;
   width: 7em;
 }
+.inputContainer{  
+  font-family: 'Gotu', sans-serif;
+  position: relative;
+  background-color: white;
+  height: 100%;
+  width: 400px;
+}
+
 
 select{
   margin-left: .5rem;
