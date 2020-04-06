@@ -21,10 +21,10 @@ const App = () => {
   let toAmount, fromAmount
   if(amountInFromCurrency){
     fromAmount = amount
-    toAmount = amount * exchangeRate || 0
+    toAmount = (amount * exchangeRate || 0).toFixed(3)
   } else {
     toAmount = amount
-    fromAmount = amount / exchangeRate
+    fromAmount = (amount / exchangeRate).toFixed(3)
   }
 
   useEffect(() => {
@@ -52,7 +52,7 @@ const App = () => {
       setDate(CurrentDate);
       setFromCurrency(APIdata.data.base);
       setExchangeRate(APIdata.data.rates[toCurrency])
-      setCurrencyOptions([APIdata.data.base, ...Object.keys(APIdata.data.rates)])
+      setCurrencyOptions([...Object.keys(APIdata.data.rates)])
       setCurrentRates(APIdata.data.rates);
   }
  

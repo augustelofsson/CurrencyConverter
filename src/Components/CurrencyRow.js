@@ -6,7 +6,7 @@ const CurrencyRow = (props) => {
         selectedCurrency,
         onChangeCurrency,
         onChangeAmount,
-        amount
+        amount,
     } = props
     return (
         <div>
